@@ -1,0 +1,289 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* using the power of inherits: ; */
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    /* using the power of inherits: ; */
+    line-height: 1.7;
+    /* padding: 3rem; */
+}
+
+/* variables */
+.background-red {
+    background-color: #C00824;
+
+}
+
+.background-purple {
+    background-color: #591682;
+}
+
+/* NAV MENU  */
+.header {
+
+    padding: 1rem;
+    display: block;
+    border-color: white;
+
+}
+
+.menu-items {
+    list-style: none;
+    color: white;
+}
+
+
+.header-menu {
+    display: inline-flex;
+
+
+}
+
+.header-menu_logo {
+    color: white;
+    margin-left: 35vw;
+    font-size: 3rem;
+}
+
+/* toggle button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #591682;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #591682;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* HERO SECTION  */
+.hero-section {
+    height: 70vh;
+    background-image: url('img/hero_background-westview.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 3rem 0rem;
+
+
+
+}
+
+.hero-clippath {
+    background-color: black;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    height: 74.8vh;
+    clip-path: polygon(0 0, 100% 0, 99% 0vh, 0 99%);
+
+}
+
+.hero-section_text-box {
+    color: white;
+    padding: 12rem 10rem;
+    font-size: 2.5rem;
+
+}
+
+.main-cta {
+    max-width: 164px;
+    max-height: 62px;
+    padding: 25px;
+    background-color: #C00824;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+/* WESTVIEW SECTION */
+.westview-section {
+    height: 45vh;
+    padding: 15rem;
+
+}
+
+.row {
+    max-width: 122rem;
+    margin: 0 auto;
+
+}
+
+.col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+    float: left;
+    margin-left: -3rem;
+
+}
+
+.heading-secondary {
+    font-size: 3rem;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+}
+
+
+.westview-section_imgright {
+    transition: transform .5s;
+    margin-left: 5rem;
+}
+
+.westview-section_imgleft {
+    transition: transform .5s;
+}
+
+/* code source: my scss course */
+.westview-section_imgright:hover {
+    transform: scale(1.05) translateY(-0.5rem);
+    ;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.westview-section_imgleft:hover {
+    transform: scale(1.05) translateY(-0.5rem);
+    ;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+
+/* WESTVIEW FAVORITE COUPLE */
+.westview-favorite-couple {
+    background-color: #C00824;
+    color: white;
+    clip-path: polygon(0% 1%, 130% 23%, 100% 100%, 1% 99%);
+}
+
+.fav-couple {
+    padding-left: 2rem;
+    margin-left: 7rem;
+}
+
+/* WESTVIEW BOARD */
+
+.board-directors
+
+/*section */
+    {
+    background-color: black;
+    height: 95vh;
+    padding-top: 2rem;
+}
+
+.westview-board {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.col-1-of-4 {
+    width: calc((100% - 3 * 6rem)/ 4);
+    float: left;
+    margin-right: 3rem;
+}
+
+.board-box {
+    background-color: #C00824;
+    height: 438px;
+    width: 270;
+    border-radius: 15px;
+    margin-top: 5rem;
+    padding: 2.5rem;
+
+}
+
+.board_img-box {
+    height: 210px;
+    width: 210px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.h3-heading {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.wanda-profile {
+    margin-left: -4rem;
+    margin-top: 2.9rem;
+}
+
+.vision-profile {
+    margin-left: 3rem;
+    margin-top: 2.8rem;
+
+}
+
+.agatha-profile {
+    margin-left: 2rem;
+    margin-top: 2.8rem;
+
+}
+
+.monica-profile {
+    margin-left: 2rem;
+    margin-top: 2.2rem;
+
+}
